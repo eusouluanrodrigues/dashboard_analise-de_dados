@@ -5,11 +5,13 @@ from dataset import df
 import pandas as pd
 
 def format_number(value, prefix =''):
+   
     for unit in ['','mil']:
         if value < 1000:
-            return f'{prefix} {value:.2f} {unit}'
+            return f'{prefix} {value:,.2f} {unit}'.replace(",", "x").replace(".", ",").replace("x", ".")
         value /= 1000
-    return f'{prefix} R${value:.2f} milhões'
+    return f'{prefix} R${value:,.2f} milhões'.replace(",", "x").replace(".", ",").replace("x", ".")
+
 
 #--------------------------------------------------------------------------------------------#
 

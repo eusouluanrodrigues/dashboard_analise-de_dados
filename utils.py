@@ -1,5 +1,6 @@
 # Aqui você formata um numero 
-
+# Formatação do número para usar a convenção brasileira de separadores de milhares e decimais
+# Primeiro, você substitui todas as vírgulas por “x”. Então você substitui todos os pontos por vírgulas. Finalmente, você substitui todos os “x” por pontos.
 
 from dataset import df
 import pandas as pd

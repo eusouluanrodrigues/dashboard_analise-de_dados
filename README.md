@@ -1,2 +1,2 @@
 # dashboard_analise-de_dados
-Analise de dados de um Call Center
+Projeto criado na faculdade FASTEG no curso - Analise de dados Python com BI
